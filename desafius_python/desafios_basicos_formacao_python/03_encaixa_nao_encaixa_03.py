@@ -20,4 +20,4 @@ for _ in range(N):
     if encaixa(A, B):
         print("encaixa")
     else:
-        print("nao encaixa")
+        print("nao encaixa") 
