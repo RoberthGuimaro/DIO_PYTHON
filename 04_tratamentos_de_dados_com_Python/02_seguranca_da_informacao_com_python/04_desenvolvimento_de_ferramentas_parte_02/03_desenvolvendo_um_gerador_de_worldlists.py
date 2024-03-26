@@ -20,5 +20,5 @@ string = input('String a ser permutada: ')
 
 resultado = itertools.permutations(string, len(string))
 
-for i in resultado:
-    print(''.join(i))
+for caracter in resultado:
+    print(''.join(caracter))
