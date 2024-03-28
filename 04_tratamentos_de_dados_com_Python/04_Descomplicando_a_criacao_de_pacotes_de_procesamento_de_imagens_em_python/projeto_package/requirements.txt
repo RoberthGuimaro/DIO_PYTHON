@@ -1,0 +1,5 @@
+# Usado para passar as dependências
+# que devem ser instaladas com o seu
+# pacote.
+# Opcionalmente, podem ser
+# especificadas as versões.
