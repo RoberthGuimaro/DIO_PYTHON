@@ -231,3 +231,87 @@
 
     
 """
+
+"""
+    Pacote de autenticação do Django
+
+    - O Django já possuí um pacote de autenticação que é empacatodo
+    em django.contrib.auth
+
+    - Esse pacote cria as tabelas de usuários e permissões, onde fica
+    mais fácil controlar as autenticações e permissões.
+
+    - Para se utilizar da autenticação padrão do Django é necessário
+    que o pacote esteja entre os Apps instalados no settings do projeto
+    (esse configuração já vem pronta por default)
+"""
+
+"""
+    Authenticate
+    
+    - A função authenticate do pacote django.contrib.auth é responsável
+    por authenticar o usuário.
+
+    - Importação
+        from django.contrib.auth import authenticate
+
+    - Utilização
+        user = authenticate(username=username, password=password)
+"""
+
+"""
+    Login
+
+    - A função login do pacote django.contrib.auth é responsável por
+    criar uma sessão para o usuário autenticado.
+
+    - Importação
+        from django.contrib.auth import login
+
+    - Utilização
+        login(request, user)
+"""
+
+"""
+    Logout
+
+    - A função logout do pacote django.contrib.auth é responsável
+    por limpar os dados do usuário da sessão.
+
+    - Importação
+        from django.contrib.auth import authenticate, login, logout
+
+    - Utilização
+        user = logout(request)
+"""
+
+"""
+    Login_required
+
+    - A função login_required do pacote django.contrib.auth é responsável
+    por autenticar o usuário.
+
+    - Ele é um decorador que é utilizado em todas as funções/views que
+    necessitam de um usuário logado/autenticado para serem acessadas.
+
+    - Importação
+        from django.contrib.auth.decorators import login_required
+
+    - Utilização
+        @login_required(login_url='/login/')
+        def lista_eventos(request):
+"""
+
+"""
+    Decoradores
+
+    - São funções que são usadas sobre outras funções.
+
+    - Os decoradores são usados para extrair um código comum que deve ser
+    aplicado para diversas funções.
+
+    - A função login_required do pacote django.contrib.auth por exemplo,
+    usada como decorador, faz com que seja realizada uma validação comum
+    (usuário logado) para que em caso de usuário não logado, impeça a
+    execução da função a qual ela está decorando.
+"""
